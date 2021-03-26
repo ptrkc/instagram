@@ -104,7 +104,6 @@ a.action:hover{
 .top-right > *{
     margin: 0px 10px;
 }
-
 .conteudo{
     width: 935px;
     margin: auto;
@@ -170,16 +169,14 @@ a.action:hover{
     height: 85px;
     width: 66px;
 }
-/* Contorno do story */
 .story div{
     width: 66px;
     height: 66px;
-    background-image: url(/img/stories_background.jpg);
+    background-image: url(../img/stories_background.jpg);
     background-size: 66px 66px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
 }
 .story img{
     width: 56px;
@@ -255,7 +252,6 @@ video{
     padding: 0px 15px;
     line-height: 22px;
 }
-
 .comentarios div{
     display: flex;
     justify-content: space-between;
@@ -310,14 +306,18 @@ video{
 .spacer{
     width: 28px;
 }
+.sidebar-space{
+    width: 293px;
+}   
 .sidebar{
     position:fixed;
     top: 88px;
-    left: calc(calc(calc( 100% - 935px) / 2) + 642px );
+    left: auto;
     width: 293px;
     color: #8E8E8E;
     font-size: 14px;
     z-index:1000;
+    padding-right: 14px;
 }
 .sidebar div{
     display: flex;
@@ -340,7 +340,7 @@ video{
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    margin:10px 5px
+    margin:8px 5px
 }
 .sidebar .profile img{
     width: 56px;
@@ -359,7 +359,6 @@ video{
 .sidebar .cinza a{
     color: #C7C7C7;
     font-size: 11px;
-
 }
 .sidebar .see-all{
     text-decoration: none;
@@ -372,16 +371,12 @@ video{
 .suggestions-title{
 font-weight: bold;
 font-size: 14px;
+margin-bottom: 5px;
 }
-
 ion-icon {
     font-size: 24px;
     z-index:1;
-
 }
-
-
-
 @media (max-width: 935px) {
     .top-left{
         margin:0px 15px;
@@ -398,6 +393,9 @@ ion-icon {
     .sidebar{
         display: none;
     }
+    .sidebar-space{
+        display: none;
+    }  
 }
 
 @media (max-width: 614px) {
