@@ -1,7 +1,11 @@
+* {
+box-sizing: border-box;
+}
 body{
     background: #fafafa;
     font-family: 'Roboto', sans-serif;
     color: #262626;
+    overflow-x: hidden;
 }
 a:link,
 a:visited {
@@ -18,8 +22,9 @@ a.cinza:visited {
 }
 a.action:link,
 a.action:visited {
-  color: #0095F6;
+  color: #0095F6;   
   font-weight: bold;
+  font-size: 12px;
 }
 a.mention:link,
 a.mention:visited {
@@ -87,6 +92,7 @@ a.action:hover{
     border: 1px solid #DBDBDB;
     box-sizing: border-box;
     border-radius: 3px;
+    }
 }
 .topo-conteudo input::placeholder{
     color: #979797;
@@ -103,7 +109,6 @@ a.action:hover{
     width: 935px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
 }
 .main{
     width: 614px;
@@ -134,7 +139,7 @@ a.action:hover{
     overflow: hidden;
     top: 40px;
     right:8px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 5px black;
     border-radius: 50%;
     width: 24px;
     height: 24px;
@@ -142,7 +147,6 @@ a.action:hover{
 .stories .setinha ion-icon{
     position: absolute;
     color: white;
-    background: black;
     width: 30px;
     height: 30px;
     font-size: 24x;
@@ -203,7 +207,7 @@ a.action:hover{
     font-size: 14px;
     font-weight: bold;
     padding: 0px 15px;
-    border: 1px solid #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
 }
 .post-head div{
     display: flex;
@@ -303,11 +307,13 @@ video{
 .post-comment a:last-of-type:hover {
     color:#0095F6;
 }
-
+.spacer{
+    width: 28px;
+}
 .sidebar{
     position:fixed;
     top: 88px;
-    left: calc(calc(calc( 100vw - 935px) / 2) + 642px );
+    left: calc(calc(calc( 100% - 935px) / 2) + 642px );
     width: 293px;
     color: #8E8E8E;
     font-size: 14px;
@@ -355,12 +361,19 @@ video{
     font-size: 11px;
 
 }
-.sidebar div:nth-of-type(2) .username{
+.sidebar .see-all{
     text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
 }
 .navbar{
     display:none;
 }
+.suggestions-title{
+font-weight: bold;
+font-size: 14px;
+}
+
 ion-icon {
     font-size: 24px;
     z-index:1;
@@ -379,6 +392,9 @@ ion-icon {
         align-items: center;
         justify-content: center;
         }
+    .spacer{
+        display: none;
+    }
     .sidebar{
         display: none;
     }
